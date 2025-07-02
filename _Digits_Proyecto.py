@@ -209,7 +209,8 @@ if __name__ == "__main__":
 
     if opcion == "1":
         try:
-            nuevo = leer_imagen_con_cv2("image-test.png")
+            number = input("Ingrese el número de la imagen(0 - 9): ")
+            nuevo = leer_imagen_con_cv2(f"image-test-{number}.png")
             plot_image(nuevo, title="Imagen cargada desde archivo externo")
         except Exception as e:
             print(f"\nError al leer la imagen externa: {e}")

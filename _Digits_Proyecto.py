@@ -221,8 +221,8 @@ if __name__ == "__main__":
             nuevo = X_test[randnum]
             plot_image(nuevo, title=f"Se usó imagen de prueba automática (etiqueta real: {y_test[randnum]})")
     else:
-        nuevo = X_test[0]
-        plot_image(nuevo, title=f"Imagen automática (etiqueta real: {y_test[0]})")
+        nuevo = X_test[randnum]
+        plot_image(nuevo, title=f"Imagen automática (etiqueta real: {y_test[randnum]})")
 
     indices_cercanos, targets_cercanos = clasificar_version_1(nuevo, X_train_flat, y_train)
     print("\nIndices de los 3 más cercanos:", indices_cercanos)

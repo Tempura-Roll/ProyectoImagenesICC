@@ -218,8 +218,8 @@ if __name__ == "__main__":
             plot_image(nuevo, title="Imagen cargada desde archivo externo")
         except Exception as e:
             print(f"\nError al leer la imagen externa: {e}")
-            nuevo = X_test[0]
-            plot_image(nuevo, title=f"Se usó imagen de prueba automática (etiqueta real: {y_test[0]})")
+            nuevo = X_test[randnum]
+            plot_image(nuevo, title=f"Se usó imagen de prueba automática (etiqueta real: {y_test[randnum]})")
     else:
         nuevo = X_test[0]
         plot_image(nuevo, title=f"Imagen automática (etiqueta real: {y_test[0]})")

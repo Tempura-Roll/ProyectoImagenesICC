@@ -142,7 +142,7 @@ if __name__ == "__main__":
     print(f"Accuracy version 1 (3 más cercanos): {acc_v1:.2f}")
     print(f"Accuracy version 2 (distancia a promedios): {acc_v2:.2f}")
 
-    print("\n=== Reporte clasificación versión 1 ===")
+    print("\n=== Reporte clasificación version 1 ===")
     print(classification_report(y_test, y_pred_v1, digits=4))
 
     print("=== Reporte clasificación versión 2 ===")

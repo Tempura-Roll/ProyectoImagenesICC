@@ -202,7 +202,7 @@ if __name__ == "__main__":
     # =================================
 
     print("\nSeleccione una opción para probar la IA:")
-    print("1. Usar imagen externa ('test_Image.png')")
+    print("1. Usar imagen externa ('image-test.png')")
     print("2. Usar primer dígito del test automático (X_test[0])")
 
     opcion = input("Ingrese 1 o 2: ").strip()

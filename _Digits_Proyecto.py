@@ -210,7 +210,7 @@ if __name__ == "__main__":
     print("2. Usar un elemento aleatorio del test automático")
 
     opcion = input("Ingrese 1 o 2: ").strip()
-
+    randnum = randint(0, len(X_test) - 1)
     if opcion == "1":
         try:
             number = input("Ingrese el número de la imagen(0 - 9): ")

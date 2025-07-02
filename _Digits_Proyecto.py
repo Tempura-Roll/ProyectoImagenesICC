@@ -133,6 +133,9 @@ if __name__ == "__main__":
     )
     X_train_flat = X_train.reshape(len(X_train), -1)
 
+    print(f"Tamaño del conjunto de entrenamiento: {len(X_train)}")
+    print(f"Tamaño del conjunto de prueba: {len(X_test)}")
+
     # Evaluar los dos métodos automáticamente
     acc_v1, acc_v2, y_pred_v1, y_pred_v2 = evaluar_modelos(X_train, y_train, X_test, y_test, avg_images)
     print(f"Accuracy versión 1 (3 más cercanos): {acc_v1:.2f}")

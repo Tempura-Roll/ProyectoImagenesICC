@@ -123,7 +123,7 @@ if __name__ == "__main__":
     avg_images = calcular_promedios(images, targets)
 
     # Mostrar promedios
-    if input("Desea ver las imagenes promedio? (y/n)") == "y":
+    if input("Desea ver las imagenes promedio? (y/n): ") == "y":
         for d in range(10):
             plot_image(avg_images[d], title=f'Promedio dígito {d}')
 

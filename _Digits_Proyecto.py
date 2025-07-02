@@ -102,8 +102,8 @@ def leer_imagen_con_cv2(ruta):
 
 def guardar_reportes_txt(nombre_archivo, acc_v1, acc_v2, y_test, y_pred_v1, y_pred_v2):
     with open(nombre_archivo, "w") as f:
-        f.write(f"Accuracy versión 1 (3 vecinos): {acc_v1:.4f}\n")
-        f.write(f"Accuracy versión 2 (promedios): {acc_v2:.4f}\n\n")
+        f.write(f"Accuracy version 1 (3 vecinos): {acc_v1:.4f}\n")
+        f.write(f"Accuracy version 2 (promedios): {acc_v2:.4f}\n\n")
 
         f.write("=== Reporte clasificación versión 1 ===\n")
         f.write(classification_report(y_test, y_pred_v1, digits=4))

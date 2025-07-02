@@ -31,7 +31,7 @@ def plot_image(img, title=""):
 
 
 # ===========================
-# Clasificación por distancias a todos los dígitos (Versión 1)
+# Clasificación por distancias a todos los dígitos (version 1)
 # ===========================
 def clasificar_version_1(nuevo, data, targets, k=3):
     distancias = cdist([nuevo.flatten()], data)[0]
@@ -40,7 +40,7 @@ def clasificar_version_1(nuevo, data, targets, k=3):
 
 
 # ===========================
-# Clasificación por distancia a promedios (Versión 2)
+# Clasificación por distancia a promedios (version 2)
 # ===========================
 def clasificar_version_2(nuevo, avg_images):
     dist_prom = cdist([nuevo.flatten()], avg_images.reshape(10, -1))[0]

@@ -1,6 +1,5 @@
 from collections import Counter
 from random import randint
-
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt

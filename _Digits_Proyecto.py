@@ -139,8 +139,8 @@ if __name__ == "__main__":
 
     # Evaluar los dos métodos automáticamente
     acc_v1, acc_v2, y_pred_v1, y_pred_v2 = evaluar_modelos(X_train, y_train, X_test, y_test, avg_images)
-    print(f"Accuracy versión 1 (3 más cercanos): {acc_v1:.2f}")
-    print(f"Accuracy versión 2 (distancia a promedios): {acc_v2:.2f}")
+    print(f"Accuracy version 1 (3 más cercanos): {acc_v1:.2f}")
+    print(f"Accuracy version 2 (distancia a promedios): {acc_v2:.2f}")
 
     print("\n=== Reporte clasificación versión 1 ===")
     print(classification_report(y_test, y_pred_v1, digits=4))

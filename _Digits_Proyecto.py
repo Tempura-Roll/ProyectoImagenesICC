@@ -107,7 +107,7 @@ def guardar_reportes_txt(nombre_archivo, acc_v1, acc_v2, y_test, y_pred_v1, y_pr
 
         f.write("=== Reporte clasificación version 1 ===\n")
         f.write(classification_report(y_test, y_pred_v1, digits=4))
-        f.write("\n=== Reporte clasificación versión 2 ===\n")
+        f.write("\n=== Reporte clasificación version 2 ===\n")
         f.write(classification_report(y_test, y_pred_v2, digits=4))
 
 

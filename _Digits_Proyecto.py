@@ -211,6 +211,8 @@ if __name__ == "__main__":
     print("2. Usar un elemento aleatorio del test automático")
 
     opcion = input("Ingrese 1 o 2: ").strip()
+    while opcion not in ["1","2"]:
+        opcion = input("Opción invalida. Por favor ingrese 1 o 2: ").strip()
     randnum = randint(0, len(X_test) - 1)
     if opcion == "1":
         try:

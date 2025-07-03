@@ -19,7 +19,7 @@ Accuracy version 2 (promedios): 0.9000
    macro avg     0.9840    0.9841    0.9839       360
 weighted avg     0.9835    0.9833    0.9832       360
 
-=== Reporte clasificaci�n versi�n 2 ===
+=== Reporte clasificacion version 2 ===
               precision    recall  f1-score   support
 
            0     0.9706    1.0000    0.9851        33

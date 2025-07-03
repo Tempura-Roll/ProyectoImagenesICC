@@ -149,7 +149,7 @@ if __name__ == "__main__":
     print("\n=== Reporte clasificacion version 1 ===")
     print(classification_report(y_test, y_pred_v1, digits=4))
 
-    print("=== Reporte clasificación version 2 ===")
+    print("=== Reporte clasificacion version 2 ===")
     print(classification_report(y_test, y_pred_v2, digits=4))
 
     # Mostrar aciertos por dígito
